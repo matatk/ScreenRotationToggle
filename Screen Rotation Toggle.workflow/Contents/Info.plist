@@ -15,6 +15,6 @@
 		</dict>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string></string>
+	<string>matatk.ScreenRotationToggle</string>
 </dict>
 </plist>
