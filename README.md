@@ -9,18 +9,15 @@ are credited in the source) for my Dad, as his monitor can be rotated.
 Mine can't, so I don't intend to be actively developing this -- so
 patches are very welcome :-).
 
+This has been tested on a Mac Mini running Mavericks.
+
 Installation
 ------------
 
-1.  Download the [latest
-    release](https://github.com/matatk/ScreenRotationToggle/releases/latest)'s
-    Zip file.
-2.  Unzip the Zip file; you will have a folder containing an Application
-    and a Service, which must be dragged to your personal Services
-    folder in order for OS X to recognise them. A link to your personal
-    Services folder is also provided in the Zip file, named
-    "my-services-folder", so you can drag the Application and Service
-    onto that link, and then remove the Zip file and unzipped folder.
+1.  Download the Zip file of the latest release:
+    https://github.com/matatk/ScreenRotationToggle/releases/latest
+2.  Unzip the Zip file and move the application and the service to your
+    \~/Library/Services folder.
 3.  Visit System Preferences \> Keyboard \> Shortcuts \> Services and
     assign a shortcut key combination to the "Safari Zoom Mode Toggle"
     service (under "General" at the bottom of the list).
@@ -40,10 +37,16 @@ this are given in a pop-up message.
 Compiling
 ---------
 
-0.  Ensure you hae Apple's Command Line Developer tools installed (for
+Normal AppleScripts are kept in binary files; this seemed incongruous
+with the nature of open development, so the script is being developed in
+plain text, in exchange for a small 'compilation' process being
+required...
+
+0.  Ensure you have Apple's Command Line Developer tools installed (for
     make).
 1.  Clone the code.
 2.  Run `make`; this will compile/build the helper app and put it and
-    the Service in `~/Library/Services/` for you.
+    the Service in `~/Library/Services/` for you. It will also build a
+    Zip file containing the app, service and README for distribution.
 3.  Follow step 3 as above.
 

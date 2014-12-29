@@ -23,7 +23,7 @@ redist: $(APP)
 	$(eval BASE := $(shell basename $(CURDIR))--$(shell date +%Y-%m-%d))
 	mkdir $(BASE)
 	cp -a $(APP) $(SERVICE) $(BASE)/
-	ln -s ~/Library/Services $(BASE)/my-services-folder
+	cp -a README.md $(BASE)/README.txt
 	zip -9r --symlinks $(BASE).zip $(BASE)
 	rm -rf $(BASE)
 
