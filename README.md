@@ -17,7 +17,7 @@ Installation
 1.  Download the Zip file of the latest release:
     https://github.com/matatk/ScreenRotationToggle/releases/latest
 2.  Unzip the Zip file and move the application and the service to your
-    \~/Library/Services folder.
+    \~/Library/Services/ folder.
 3.  Visit System Preferences \> Keyboard \> Shortcuts \> Services and
     assign a shortcut key combination to the "Safari Zoom Mode Toggle"
     service (under "General" at the bottom of the list).
@@ -32,7 +32,9 @@ rotation, it will be toggled to 90-degree rotation; if the display is on
 **Note:** the first time you use this (or a new version), it needs to be
 granted access to GUI scripting (so that it can access and activate
 System Preference's menus and menu items); instructions on how to do
-this are given in a pop-up message.
+this are given in a pop-up message. **You may need to run it using
+Finder from \~/Library/Services/ rather than via the keyboard shortcut
+in order for the pop-up to appear.**
 
 Compiling
 ---------
